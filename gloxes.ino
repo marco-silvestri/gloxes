@@ -104,7 +104,7 @@ void setup()
 
   // Add virtual devices
 
-  fauxmo.addDevice("gloxes");
+  fauxmo.addDevice("Gloxes");
 
   strip.begin();
   strip.show();
@@ -130,8 +130,8 @@ void setup()
     //Switching action on detection of device name
     //------------------------------------------------------------------------------
 
-    if ( (strcmp(device_name, "gloxes") == 0) ) {
-      Serial.println("You said gloxes");
+    if ( (strcmp(device_name, "Gloxes") == 0) ) {
+      Serial.println("You said Gloxes");
       if (state) {
         i = 1;
         brightness = value;
@@ -172,7 +172,7 @@ void startShow(int i)
     case 0: colorWipe(strip.Color(0, 0, 0), 50);          // off
       Serial.println("I'm off");
       break;
-    case 1: colorWipe(strip.Color(200, 90, 0), 50);        // on
+    case 1: colorWipe(strip.Color(250, 220, 50), 50);        // on
       Serial.println("I'm on"); 
       break;
   }
@@ -207,7 +207,7 @@ void colorWipe(uint32_t c, uint8_t wait)
 // all off
 void allOff()
 {
-  for ( int i = 0; i < numPixels; i++ )
+  for ( int i = strip.numPixels(); i == 0; i--)
   {
     strip.setPixelColor(i, 0, 0, 0 );
   }
