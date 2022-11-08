@@ -14,10 +14,9 @@
 fauxmoESP fauxmo;
 AsyncWebServer server(80);
 
-// -----------------------------------------------------------------------------
-#define SERIAL_BAUDRATE               115200
+#define SERIAL_BAUDRATE 115200
 //declare switching pins
-#define RGBCTL                        D4 //control pin
+#define RGBCTL D4 //control pin
 
 int numPixels = 39;
 int i; // i=1 white-ish
