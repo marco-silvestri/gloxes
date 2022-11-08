@@ -20,7 +20,7 @@ AsyncWebServer server(80);
 #define RGBCTL                        D4 //control pin
 
 int numPixels = 39;
-int i; // i=1 warm, i=2 white, i=3 pink
+int i; // i=1 white-ish
 int brightness = 5;
 
 
