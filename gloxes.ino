@@ -17,7 +17,7 @@ AsyncWebServer server(80);
 // -----------------------------------------------------------------------------
 #define SERIAL_BAUDRATE               115200
 //declare switching pins
-#define RGBCTL                        D4 //pin di controllo anello led
+#define RGBCTL                        D4 //control pin
 
 int numPixels = 39;
 int i; // i=1 warm, i=2 white, i=3 pink
